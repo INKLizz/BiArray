@@ -39,6 +39,7 @@ public class Sabillon_Cristina_BiArray {
                 Numeros[filas][columnas] = random_num;
                 System.out.print(Numeros[filas][columnas] + " ");
             }
+            
             suma_secundaria += Numeros[filas][tamaño - filas - 1];
             suma_sec += Numeros[filas][tamaño - filas - 1] + " + ";  
             
