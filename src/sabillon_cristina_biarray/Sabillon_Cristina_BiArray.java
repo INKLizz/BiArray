@@ -41,15 +41,15 @@ public class Sabillon_Cristina_BiArray {
             }
             
             suma_secundaria += Numeros[filas][tamaño - filas - 1];
-            suma_sec += Numeros[filas][tamaño - filas - 1] + " + ";  
+            suma_sec +=  (suma_sec.equals("") ?" ": " + ") + Numeros[filas][tamaño - filas - 1];  
             
             suma_primaria += Numeros[filas][filas]; 
-            suma_pri += Numeros[filas][filas] + " + ";  
+            suma_pri +=(suma_pri.equals("") ?" ": " + ") + Numeros[filas][filas];  
             System.out.println();
         }
 
-        System.out.println("\nSuma de la diagonal Principal: "+ suma_pri+ ": " + suma_primaria);
-        System.out.println("Suma de la diagonal Secundaria: " +  suma_sec  +  ": " +suma_secundaria);
+        System.out.println("\nSuma de la diagonal Principal:"+ suma_pri+ " : " + suma_primaria);
+        System.out.println("Suma de la diagonal Secundaria:" +  suma_sec  +  " : " +suma_secundaria);
     }
     
 }
